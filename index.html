@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+.container{
+width: 100%;
+height: 100vh;
+background: linear-gradient(135deg, #153677,#4e085f);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.todo-app{
+width: 450px;
+height: auto;
+background-color: white;
+border-radius: 8px;
+min-height: 250px;
+
+
+}
+.todo-app h2{
+   display: flex;
+   align-items: center;
+margin-top: 30px;
+margin-left: 30px;
+}
+.row{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 1rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.row input{
+
+flex: 1;
+padding: 15px;
+border-radius: 20px;
+border: none;
+background-color: transparent;
+outline: none;
+font-size: 1.2rem;
+}
+
+.row button{
+padding: 15px 40px;
+border-radius: 35px;
+border: none;
+background-color: #ff5945;
+color: #fff;
+}
+.row button:hover{
+    box-shadow: 5px 10px 5px #555;
+ transition: all 0.5s ease-in-out;
+background-color: #071229;
+}
+ul{
+    margin-left: 20px;
+    margin-top: 15px;
+    padding-right: 20px;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+/* ul li button{
+
+padding: 8px 20px;
+border-radius: 30px;
+border: none;
+background-color: #ff5945;
+color: whitesmoke;
+text-decoration: none impotant!;
+
+} */
+
+/* ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+
+} */
+
+
+.dom{
+text-decoration: line-through;
+/* background-image: url(https://cdn-icons-png.flaticon.com/128/16786/16786007.png); */
+background-repeat: no-repeat;
+background-position: left;
+background-size: 20px;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="todo-app">
+<h2>To-Do List <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRum6IG3MuWEqfrjXTWdyj4C3YhZ8nYdsFbfQ&s" alt="" width="60px"></h2>
+
+<div class="row">
+    <input type="text" placeholder="Enter your Task">
+    <button class="addBtn">Add</button>
+</div>
+
+<ul>
+    <!-- <li>Task 1 </li>
+    <li>Task 2 <i class="fa-solid fa-trash"></i></li>
+    <li>Task 3</li> -->
+</ul>
+
+
+</div>
+
+
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
