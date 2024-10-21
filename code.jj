@@ -1,0 +1,24 @@
+ if(input.value === ""){
+        alert("Please enter task")
+    }else{
+        let li = document.createElement("li")
+        li.innerHTML = `${input.value} <div class="icon"><spain class= "edit-icon"><i class="fa-solid fa-pen-to-square fa"></i></spain> <spain class = "delete-icon"><i class="fa-solid fa-trash"></spain></div>`
+        ul.append(li)
+        console.log(li)
+        input.value = ""
+    li.addEventListener("click", function(){
+    li.classList.toggle("dom")
+    })
+    
+    
+    li.querySelector(".edit-icon").addEventListener("click", function(e){
+    e.stopPropagation();
+    
+    })
+    
+
+    
+    
+        li.querySelector(".delete-icon").addEventListener("click", function(){
+    li.remove();
+        })
